@@ -1,33 +1,46 @@
 .navbarborder{
     border-bottom: solid 3px black;
 }
+/*IMAGENES*/
+#logo{
+  width:98.4px; 
+  height:67.2px;
+}
+#imagen-ejemplo{
+  width: 100%;
+  max-width: 400px;
+}
+/*CAROUSEL DE IMAGENES*/
+.carousel-inner img{
+  max-height: 70vh;
+  object-fit: cover;
+  filter:grayscale(70%);
+}
+#carousel{
+  position: relative;
+}
+
+#carousel .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0,0.5);
+  color: white;
+}
+#carousel .overlay .container, #carousel .overlay .row {
+  height: 100%;
+}
+
+/*BOTONES*/
 #contratar-button{
     color: #d3a7e4;
 }
 #contratar-button:hover{
     color: #000000;
 }
-.carousel-inner img{
-    max-height: 70vh;
-    object-fit: cover;
-    filter:grayscale(70%);
-}
-#carousel{
-    position: relative;
-}
 
-#carousel .overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0,0.5);
-    color: white;
-}
-#carousel .overlay .container, #carousel .overlay .row {
-    height: 100%;
-}
 /*Boton contratar*/
 .containerbtn {
     width: 180px;
@@ -55,8 +68,6 @@
     outline: none;
     transition: 1s ease-in-out;
   }
-
-  
   svg {
     position: absolute;
     left: 0;
@@ -128,8 +139,11 @@
     align-items: flex-end;
   }
   
-  .conocenos-sect{
-    height: 30vh;
-  }
+/*CONOCENOS SECTION*/
 
+
+.align-items-responsive{
+  display: flex;
+  align-items: center;
+}
   
