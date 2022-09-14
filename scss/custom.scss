@@ -1,0 +1,27 @@
+/*colores*/
+
+$principal: #d3a7e4;
+$secundario: #373534;
+
+
+$primary: $principal;
+$secondary:$secundario;
+
+.btn{
+    border: solid 1px white;
+    --bs-btn-hover-color: $principal;
+}
+.btn-secondary {
+    --bs-btn-hover-bg: #d3a7e4 ;
+  }
+  .btn {
+    border: solid 1px white;
+    --bs-btn-hover-color: $principal;
+  }
+.btn-primary{
+    border: solid 2px white;
+    
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
