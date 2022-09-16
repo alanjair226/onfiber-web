@@ -14,14 +14,10 @@ $secondary:$secundario;
 .btn-secondary {
     --bs-btn-hover-bg: #d3a7e4 ;
   }
-  .btn {
-    border: solid 1px white;
-    --bs-btn-hover-color: $principal;
-  }
-.btn-primary{
-    border: solid 2px white;
-    
-}
+
+  
+
+  $list-group-border-color: transparent;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 

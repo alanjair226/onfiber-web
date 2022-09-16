@@ -1,6 +1,14 @@
+
+*{
+  box-sizing:border-box;
+  margin: 0; 
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
 .navbarborder{
     border-bottom: solid 3px black;
 }
+
 /*IMAGENES*/
 #logo{
   width:98.4px; 
@@ -53,18 +61,19 @@
     align-items: center;
   }
   
+  
   .center {
     width: 180px;
     height: 60px;
     position: relative;
   }
   
-  .btn {
+  .contractbtn {
     width: 180px;
     height: 60px;
     cursor: pointer;
     background: transparent;
-    border: 2px solid #91C9FF;
+    border: 2px solid white;
     outline: none;
     transition: 1s ease-in-out;
   }
@@ -79,21 +88,25 @@
     transition: 1s ease-in-out;
   }
   
-  .btn:hover {
+  .contractbtn:hover {
     transition: 1s ease-in-out;
-    background: #4F95DA;
+  }
+  .contractbtn:active{
+    transition: .2s ease-in-out;
+    background-color: #d3a7e4;
   }
   
-  .btn:hover svg {
+  .contractbtn:hover svg {
     stroke-dashoffset: -480;
   }
   
-  .btn span {
+  .contractbtn span {
     color: white;
     font-size: 18px;
     font-weight: 100;
   }
-  .btnout {
+
+  .contractbtnout {
     width: 180px;
     height: 60px;
     cursor: pointer;
@@ -110,21 +123,21 @@
     outline: none;
     transition: 1s ease-in-out;
   }
-  .btnout:hover {
+  .contractbtnout:hover {
     transition: 1s ease-in-out;
     background: #373435;
   }
   
-  .btnout:hover svg {
+  .contractbtnout:hover svg {
     stroke-dashoffset: -480;
   }
   
-  .btnout span {
+  .contractbtnout span {
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 100;
   }
-  .btnout:hover > span {
+  .contractbtnout:hover > span {
     transition: 1s ease-in-out;
     color: white;
   }
@@ -147,3 +160,58 @@
 }
 
 /*PAQUETES SECTION*/
+.packbtn{
+  background-color: transparent;
+  border: solid 2px white;
+  color: white;
+  width: 100%;
+  max-width: 150px;
+  max-height: 100px;
+  border-radius: 4px;
+}
+.packbtn:hover{
+  transition: .5s ease-in-out;
+  background-color: #d3a7e4;
+  color: #373435;
+  border: solid 2px #373435;
+  box-shadow:  1px 1px 1px  #d3a7e48f;
+  -webkit-box-shadow: 0px 0px 10px 0px #d3a7e48f;
+-moz-box-shadow: 0px 0px 10px 0px #d3a7e48f;
+box-shadow: 0px 0px 10px 0px #d3a7e48f;
+}
+.packbtn:active{
+  transition: .1s ease-in-out;
+  background-color: #d3a7e48f;
+  color: #373435;
+  border: solid 2px #373435;
+  box-shadow:  1px 1px 1px  #d3a7e48f;
+}
+
+.special {
+  -webkit-box-shadow: 0px 0px 19px 7px rgba(240, 225, 14, 0.628);
+-moz-box-shadow: 0px 0px 19px 7px rgba(240, 225, 14, 0.628);
+box-shadow: 0px 0px 19px 7px rgba(240, 225, 14, 0.628);
+}
+
+.final-sect{
+  background-color: #d3a7e4;
+  min-height: 30vh;
+  color: white;
+}
+
+.final-sect div img{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 30%;
+  max-width: 200px;
+
+  
+}
+
+.map{
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  display: block;
+  margin: auto;
+}
