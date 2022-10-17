@@ -2,6 +2,10 @@
 :root{
   --main-color: #d3a7e4;
 }
+body{
+  position: relative;
+}
+
 *{
   box-sizing:border-box;
   margin: 0; 
@@ -13,6 +17,9 @@
 }
 
 .nav-link:hover{
+  color: var(--main-color);
+}
+.nav-link:active{
   color: var(--main-color);
 }
 
